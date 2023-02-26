@@ -8,6 +8,7 @@ void main() {
   runApp(welcomescreen());
 }
 
+
 class welcomescreen extends StatefulWidget {
   @override
   State<welcomescreen> createState() => _welcomescreenState();
@@ -53,7 +54,7 @@ void UserSignIn() async {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "   Connect",
+                        "   Connect Device",
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             color: Colors.white,
