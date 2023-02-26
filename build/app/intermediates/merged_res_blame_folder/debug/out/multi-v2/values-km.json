@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\meghn\\OneDrive\\Documents\\firstapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
+            "outputFile": "C:\\Users\\user\\Desktop\\flutter\\firstapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\6b0c092eedb3707ee2110fcb7c7dd85e\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-km\\values.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\6b0c092eedb3707ee2110fcb7c7dd85e\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\499c2e1c2a21c0a395f33dd842466659\\transformed\\browser-1.4.0\\res\\values-km\\values-km.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\499c2e1c2a21c0a395f33dd842466659\\transformed\\browser-1.4.0\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "3172",
-                        "endColumns": "100",
-                        "endOffsets": "3268"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\06ba84dacf48d6530f4a40d4ccf7d7ca\\transformed\\jetified-play-services-base-17.1.0\\res\\values-km\\values.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\06ba84dacf48d6530f4a40d4ccf7d7ca\\transformed\\jetified-play-services-base-17.1.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,209,396,519,626,847,973,1124,1411,1628,1736,1938,2065,2269,2457,2551,2639",
                         "endColumns": "103,186,122,106,220,125,150,137,216,107,201,126,203,187,93,87,105",
                         "endOffsets": "204,391,514,621,842,968,1119,1257,1623,1731,1933,2060,2264,2452,2546,2634,2740"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\values-km\\values-km.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "3172",
+                        "endColumns": "100",
+                        "endOffsets": "3268"
                     }
                 }
             ]

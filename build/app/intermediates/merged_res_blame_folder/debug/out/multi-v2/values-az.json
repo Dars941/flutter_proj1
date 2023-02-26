@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\meghn\\OneDrive\\Documents\\firstapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
+            "outputFile": "C:\\Users\\user\\Desktop\\flutter\\firstapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\06ba84dacf48d6530f4a40d4ccf7d7ca\\transformed\\jetified-play-services-base-17.1.0\\res\\values-az\\values.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\06ba84dacf48d6530f4a40d4ccf7d7ca\\transformed\\jetified-play-services-base-17.1.0\\res\\values-az\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\499c2e1c2a21c0a395f33dd842466659\\transformed\\browser-1.4.0\\res\\values-az\\values-az.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\499c2e1c2a21c0a395f33dd842466659\\transformed\\browser-1.4.0\\res\\values-az\\values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\6b0c092eedb3707ee2110fcb7c7dd85e\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-az\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "157",
-                        "endOffsets": "352"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1275",
-                        "endColumns": "161",
-                        "endOffsets": "1432"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\meghn\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\values-az\\values-az.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\values-az\\values-az.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -69,6 +52,23 @@
                         "startOffsets": "3192",
                         "endColumns": "100",
                         "endOffsets": "3288"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\6b0c092eedb3707ee2110fcb7c7dd85e\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-az\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "157",
+                        "endOffsets": "352"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1275",
+                        "endColumns": "161",
+                        "endOffsets": "1432"
                     }
                 }
             ]
