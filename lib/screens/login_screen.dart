@@ -20,15 +20,15 @@ class _welcomescreenState extends State<welcomescreen> {
 
   final passController = TextEditingController();
 
-void UserSignIn() async {
+  void UserSignIn() async {
     await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: robo_idController.text.trim(),
         password: passController.text.trim());
   }
   void dispose() {
-   robo_idController.dispose();
-   passController.dispose();
-   super.dispose();
+    robo_idController.dispose();
+    passController.dispose();
+    super.dispose();
 
   }
 
@@ -37,7 +37,7 @@ void UserSignIn() async {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        resizeToAvoidBottomInset: true,
+        resizeToAvoidBottomInset: false,
         body: Container(
           decoration: BoxDecoration(
               image: DecorationImage(
@@ -47,14 +47,14 @@ void UserSignIn() async {
             padding: EdgeInsets.only(bottom : 10),
             child: CustomScrollView(
               slivers: [
-                SliverFillRemaining(fillOverscroll: true,
+                SliverFillRemaining(
                   hasScrollBody: true,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "   Connect Device",
+                        "   Connect ",
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             color: Colors.white,
@@ -103,16 +103,19 @@ void UserSignIn() async {
                                     backgroundColor: Colors.yellow,
                                     side: BorderSide(
                                       width: 5,
-                                      color: Colors.brown,
+                                      color: Colors.black
+                                      ,
                                     ),
                                     elevation: 3,
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
                                         BorderRadius.circular(12)),
                                   ),
-                                  onPressed: UserSignIn,
+                                  onPressed:
+                                    UserSignIn,
 
-                                child: Text(
+
+                                  child: Text(
                                     "►Connect ",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
