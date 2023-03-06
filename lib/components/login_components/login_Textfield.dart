@@ -7,7 +7,7 @@ class LoginTextField extends StatelessWidget {
   final String labelText;
   final bool obscureText;
   final String obsuringCharacter;
-//  final  List icons;
+  final  IconData icons;
 
   LoginTextField(
       {
@@ -16,7 +16,7 @@ class LoginTextField extends StatelessWidget {
         required this.labelText,
         required this.obscureText,
         required this.obsuringCharacter,
-      //  required this.icons,
+        required this.icons,
       }
       );
  // const LoginTextField(Set set, {Key? key, required this.hintText, required this.labelText, required this.obscureText}) : super(key: key);
@@ -49,7 +49,7 @@ class LoginTextField extends StatelessWidget {
           filled: true,
           hintText: hintText,
           labelText: labelText,
-
+          prefixIcon: Icon(icons,color: Colors.yellow),
 
 
 

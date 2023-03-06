@@ -77,6 +77,7 @@ class _welcomescreenState extends State<welcomescreen> {
                                 labelText: 'Robot id',
                                 obscureText: false,
                                 obsuringCharacter: '',
+                                icons: Icons.person,
                               ),
                               SizedBox(
                                 height: 10,
@@ -88,6 +89,7 @@ class _welcomescreenState extends State<welcomescreen> {
                                 labelText: 'password',
                                 obscureText: true,
                                 obsuringCharacter: '#',
+                                icons: Icons.key,
                               ),
                               SizedBox(
                                 height: 20,
