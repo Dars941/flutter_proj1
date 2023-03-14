@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firstapp/screens/homescreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../components/login_components/login_Textfield.dart';
 
@@ -35,6 +36,11 @@ class _welcomescreenState extends State<welcomescreen> {
   @override
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+
+      DeviceOrientation.landscapeLeft,
+    ]);
     return MaterialApp(
       home: Scaffold(
         resizeToAvoidBottomInset: false,

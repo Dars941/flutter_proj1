@@ -8,7 +8,7 @@ import 'login_screen.dart';
 // import 'home_page.dart';
 
 class AuthPage extends StatelessWidget {
-  const AuthPage({super.key});
+  //const AuthPage({super.key});
 
   @override
   Widget build(BuildContext context) {

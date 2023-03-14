@@ -38,6 +38,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "control_pad",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/control_pad-1.1.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.5",
       "packageUri": "lib/",
@@ -92,6 +98,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_joystick",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_joystick-0.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1",
       "packageUri": "lib/",
@@ -108,6 +120,12 @@
       "rootUri": "file:///C:/src/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "fradio_nullsafety",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/fradio_nullsafety-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
@@ -221,10 +239,10 @@
       "name": "firstapp",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2023-02-26T14:35:41.155367Z",
+  "generated": "2023-03-13T16:50:45.286392Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }
