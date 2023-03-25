@@ -1,13 +1,25 @@
+import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firstapp/screens/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_joystick/flutter_joystick.dart';
-import 'package:control_pad/control_pad.dart';
+
 import 'package:fradio_nullsafety/fradio_nullsafety.dart';
 
-class HomePage extends StatelessWidget {
-//  HomePage({super.key});
+import '../components/joystick/joy_stick.dart';
 
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  void callback(x, y) {
+    log('callback x => $x and y $y');
+  }
+//  HomePage({super.key});
   final user = FirebaseAuth.instance.currentUser!;
 
   // sign user out method
@@ -44,7 +56,7 @@ class HomePage extends StatelessWidget {
                     // JoystickView(),
                     Container(
                       width: 590,
-                      
+
                       height: 550,
                       margin: EdgeInsets.all(10),
                       padding: EdgeInsets.all(5),
@@ -68,15 +80,13 @@ class HomePage extends StatelessWidget {
 
                               color: Colors.black,
                               size: 40),
-                          onPressed: signUserOut,
+                          onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => Settting(),),);},
 
 
                         ),
 
                        // SizedBox(height: 100),
-                        Joystick(listener:(details) {
-
-                        }, ),
+                        JoyStick(radius: 50.0, stickRadius: 20, callback: callback),
                         Column(
 
                           children: [
@@ -92,7 +102,7 @@ class HomePage extends StatelessWidget {
                                       style: BorderStyle.solid,
                                     ),
                                   ),
-                                  child: Text("Login"),
+                                  child: Text("A"),
                                   color: Colors.yellowAccent,
                                   textColor: Colors.black,
                                   onPressed: (){},
@@ -110,7 +120,7 @@ class HomePage extends StatelessWidget {
                                       style: BorderStyle.solid,
                                     ),
                                   ),
-                                  child: Text("Login"),
+                                  child: Text("B"),
                                   color: Colors.yellowAccent,
                                   textColor: Colors.black,
 
@@ -131,7 +141,7 @@ class HomePage extends StatelessWidget {
                                       style: BorderStyle.solid,
                                     ),
                                   ),
-                                  child: Text("Login"),
+                                  child: Text("C"),
                                   color: Colors.yellowAccent,
                                   textColor: Colors.black,
                                   onPressed: (){},
@@ -149,7 +159,7 @@ class HomePage extends StatelessWidget {
                                       style: BorderStyle.solid,
                                     ),
                                   ),
-                                  child: Text("Login"),
+                                  child: Text("D"),
                                   color: Colors.yellowAccent,
                                   textColor: Colors.black,
                                   onPressed: (){},
