@@ -41,6 +41,10 @@ dependencies:
   flutter_joystick: ^0.0.3
   control_pad: ^1.1.1+1
   fradio_nullsafety: ^2.0.2
+  flutter_neumorphic: ^3.2.0
+  toggle_switch: ^2.0.1
+  firebase_database: ^10.2.1
+
 
 dev_dependencies:
   flutter_test:

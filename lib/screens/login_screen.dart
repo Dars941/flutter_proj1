@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../components/login_components/login_Textfield.dart';
+import 'ForgetPasswordScreen.dart';
 
 void main() {
   runApp(welcomescreen());
@@ -136,7 +137,9 @@ class _welcomescreenState extends State<welcomescreen> {
                                 height: 10,
                               ),
                               TextButton(
-                                  onPressed: UserSignIn,
+                                  onPressed: () {
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => ForgetPassword(),),);
+                                  },
 
 
 

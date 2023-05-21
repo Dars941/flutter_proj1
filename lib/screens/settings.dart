@@ -2,7 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../components/Settingscomponents/SettingComponent.dart';
+
+import '../widgets/Settingscomponents/SettingComponent.dart';
+import 'ForgetPasswordScreen.dart';
 
 class Settting extends StatelessWidget {
   const Settting({Key? key}) : super(key: key);
@@ -10,7 +12,8 @@ class Settting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
+     // DeviceOrientation.portrait,
+
       DeviceOrientation.landscapeLeft,
     ]);
     final user = FirebaseAuth.instance.currentUser!;
@@ -21,7 +24,7 @@ class Settting extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: Colors.black12,
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text("Settings"),
         centerTitle: true,
@@ -69,7 +72,10 @@ class Settting extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+
+                        SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+                      },
                   child: const Text(
                     " Edit Profile ",
                     style: TextStyle(
@@ -93,16 +99,18 @@ class Settting extends StatelessWidget {
                 height: 10,
               ),
               SettingsContent(
-                tittle: "Forget Password ",
+                tittle: "Change Password ",
                 icon: Icons.lock_reset_outlined,
-                onPress: () {},
+                onPress: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => ForgetPassword(),),);
+                },
                 endIcon: true,
               ),
               SizedBox(
                 height: 10,
               ),
               SettingsContent(
-                tittle: "LogOut ",
+                tittle: "Log Out ",
                 icon: Icons.logout,
                 onPress: () {
                   signUserOut();

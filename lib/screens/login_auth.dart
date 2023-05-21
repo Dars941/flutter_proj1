@@ -3,6 +3,7 @@ import 'package:firstapp/screens/homescreen.dart';
 
 import 'package:flutter/material.dart';
 
+import 'hscreen.dart';
 import 'login_screen.dart';
 
 // import 'home_page.dart';
@@ -18,7 +19,7 @@ class AuthPage extends StatelessWidget {
         builder: (context, snapshot) {
           // user is logged in
           if (snapshot.hasData) {
-            return HomePage();
+            return HomePageCosole();
           }
 
           // user is NOT logged in

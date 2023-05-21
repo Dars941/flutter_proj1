@@ -18,7 +18,7 @@ class _ConsoleAppBarState extends State<ConsoleAppBar> {
     DateTime today = DateTime.now();
     String dateStr = today.toString().substring(0, 10);
     return Container(
-      color:  Color.fromARGB(255, 71, 71, 71),
+      color:  Colors.deepPurple,
       child: Row(
         children: [
           Expanded(

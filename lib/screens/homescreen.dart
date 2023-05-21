@@ -8,7 +8,9 @@ import 'package:flutter_joystick/flutter_joystick.dart';
 
 import 'package:fradio_nullsafety/fradio_nullsafety.dart';
 
-import '../components/joystick/joy_stick.dart';
+
+import '../widgets/ButtonWidget/ButtonWidget.dart';
+import '../widgets/console_widgets/joystick_control.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -87,88 +89,7 @@ class _HomePageState extends State<HomePage> {
 
                        // SizedBox(height: 100),
                         JoyStick(radius: 50.0, stickRadius: 20, callback: callback),
-                        Column(
-
-                          children: [
-                            Row(children: [
-                              Container(
-                                width: 40,
-                                height: 40,
-                                child: MaterialButton(
-                                  shape: CircleBorder(
-                                    side: BorderSide(
-                                      width: 2,
-                                      color: Colors.black12,
-                                      style: BorderStyle.solid,
-                                    ),
-                                  ),
-                                  child: Text("A"),
-                                  color: Colors.yellowAccent,
-                                  textColor: Colors.black,
-                                  onPressed: (){},
-                                ),
-                              ),
-                              SizedBox(width: 30),
-                              Container(
-                                width: 40,
-                                height: 40,
-                                child: MaterialButton(
-                                  shape: CircleBorder(
-                                    side: BorderSide(
-                                      width: 2,
-                                      color: Colors.black12,
-                                      style: BorderStyle.solid,
-                                    ),
-                                  ),
-                                  child: Text("B"),
-                                  color: Colors.yellowAccent,
-                                  textColor: Colors.black,
-
-                                  onPressed: (){},
-                                ),
-                              ),
-                            ],),
-                            SizedBox(height: 30,),
-                            Row(children: [
-                              Container(
-                                width: 40,
-                                height: 40,
-                                child: MaterialButton(
-                                  shape: CircleBorder(
-                                    side: BorderSide(
-                                      width: 2,
-                                      color: Colors.black12,
-                                      style: BorderStyle.solid,
-                                    ),
-                                  ),
-                                  child: Text("C"),
-                                  color: Colors.yellowAccent,
-                                  textColor: Colors.black,
-                                  onPressed: (){},
-                                ),
-                              ),
-                              SizedBox(width: 30),
-                              Container(
-                                width: 40,
-                                height: 40,
-                                child: MaterialButton(
-                                  shape: CircleBorder(
-                                    side: BorderSide(
-                                      width: 2,
-                                      color: Colors.black12,
-                                      style: BorderStyle.solid,
-                                    ),
-                                  ),
-                                  child: Text("D"),
-                                  color: Colors.yellowAccent,
-                                  textColor: Colors.black,
-                                  onPressed: (){},
-                                ),
-                              ),
-                            ],)
-
-                          ],
-                        ),
+                        ButtonWidget(),
                       ],
                     ),
 
@@ -180,3 +101,4 @@ class _HomePageState extends State<HomePage> {
         ));
   }
 }
+
